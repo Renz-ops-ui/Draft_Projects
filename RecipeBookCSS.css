@@ -1,0 +1,61 @@
+body{
+    background-color: #17202A;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+#main-container{
+    width: 90%;
+    max-width: 500px;
+    background-color: #212F3D;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.logo{ width: 130px; height: auto; margin-bottom: 10px; }
+
+.title{
+    color: #F1C40F;
+    font-family: serif;
+    font-style: italic;
+    font-size: 28px;
+}
+
+.button{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover{ opacity: 0.8; transform: scale(1.02); }
+
+.blue{ background-color: #3498DB; }
+.green{ background-color: #2ECC71; }
+.red{ background-color: #E74C3C; }
+.gray{ background-color: #7F8C8D; }
+.dark-gray{ background-color: #34495E; margin-top: 20px; }
+
+#display-pane{
+    background-color: #1C2833;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.recipe-title{ color: #F1C40F; font-family: 'Consolas', monospace; font-size: 20px; margin-top: 15px; }
+.ingredient-list{ color: #ECF0F1; font-style: italic; list-style-type: " > "; }
