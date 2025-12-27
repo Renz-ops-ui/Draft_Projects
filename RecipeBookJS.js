@@ -1,5 +1,5 @@
-let savedDATA = localStorage.getItem("myRecipes");
-let recipes = savedDATA ? JSON.parse(savedDATA) : [
+let savedData = localStorage.getItem("myRecipes");
+let recipes = savedData ? JSON.parse(savedData) : [
     {
         name: "Spaghetti",
         ingredients: ["Spaghetti Noodles", "Spaghetti Sauce", "Hotdogs", "Garlic & Onions", "Salt & Pepper", "Ground Beef", "Cheese"]
@@ -11,7 +11,7 @@ let recipes = savedDATA ? JSON.parse(savedDATA) : [
 ];
 
 function saveToBrowser() {
-    localStorage.getItem("myRecipes", JSON.stringify(recipes));
+    localStorage.setItem("myRecipes", JSON.stringify(recipes));
 }
 
 function showRecipes() {

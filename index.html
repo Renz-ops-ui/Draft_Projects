@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Recipe Book V3</title>
+        <title>Recipe Book</title>
         <link rel="stylesheet" href="RecipeBookCSS.css">
     </head>
     <body>
@@ -16,7 +16,7 @@
                     <button onclick="showRecipes()" class="button blue">1. Show Recipes</button>
                     <button onclick="addRecipe()" class="button green">2. Add New Recipe</button>
                     <button onclick="removeRecipe()" class="button red">3. Remove Recipe</button>
-                    <button onclick="window.close()" class="button gray">0. Exit</button>
+                    <button onclick="location.reload()" class="button gray">0. Refresh Page</button>
                 </div>
             </div>
             
@@ -26,6 +26,8 @@
                 <button onclick="showMenu()" class="button dark-gray">Return to Main Menu</button>
             </div>
         </div>    
+        
+        <div id="version">3.1</div>
             
         <script src="RecipeBookJS.js"></script>    
     </body>
